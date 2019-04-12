@@ -4,3 +4,5 @@ A list of design prompts, and links to my take on them from scratch without any 
 ### DailyUI
 * Sign Up Page
 * Credit Card Layout
+* Landing Page
+* Calculator design
