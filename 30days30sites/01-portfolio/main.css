@@ -346,5 +346,13 @@ footer {
   width: 100vw;
   height: 20vh;
   background: black;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center !important;
+  font-family: Raleway, sans-serif;
+  color: white;
+  padding: 9vh 0;
 }
 /*# sourceMappingURL=main.css.map */
