@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit; // vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
+
+h1,
+h2,
+h3,
+p {
+    font-family: Raleway, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+// paralax stuff
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+    perspective: 2px;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    // text-shadow: 0 0 5px #000;
+}
+
+section.parallax h1 {
+    font-size: 5em;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background: white;
+}
+
+.bg1::after {
+    overflow: hidden;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('http://placeimg.com/2048/1536/any');
+    background-repeat: no-repeat;
+
+}
+
+.bg2::after {
+    overflow: hidden;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('http://placeimg.com/2048/1535/any');
+    background-repeat: no-repeat;
+
+}
+
+section.static {
+    background: black;
+    color: white;
+}
+
+.box {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    border: 5px white solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.box .title {
+    color: white;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Satisfy', cursive;
+}
+
+p {
+    color: white;
+    background: black;
+    font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box .venue {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 50%;
+    transform: translate(0.7em, -50%);
+    font-size: 2em;
+    padding: 2em 0;
+}
+
+.box .date {
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    top: 50%;
+    transform: translate(-0.7em, -50%) rotate(180deg);
+    font-size: 2em;
+    left: 0;
+    padding: 2em 0;
+}
+
+.box .line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 30%;
+    font-size: 2em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.RSVP {
+    display: block;
+    text-align: center;
+    height: 100vh;
+
+    >div {
+        padding-top: 20em;
+    }
+
+    h1,
+    h2,
+    button {
+        font-family: Satisfy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    button {
+        font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.5em 1em;
+        width: auto;
+        color: white;
+        background: transparent;
+        border: solid 1px white;
+        font-size: 2em;
+
+        &:hover {
+            background: black;
+            border: solid 1px black;
+        }
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+footer {
+    z-index: 10;
+    height: 10vh;
+    width: 100vw;
+    background: black;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding-top: 2em;
+    font-family: Raleway;
+}
