@@ -135,7 +135,6 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
-
 h1,
 h2,
 h3,
@@ -144,11 +143,9 @@ p {
 }
 
 // paralax stuff
-
 .wrapper {
     height: 100vh;
-    overflow-x: hidden;
-    // overflow-y: hidden;
+    overflow-x: hidden; // overflow-y: hidden;
     perspective: 2px;
 }
 
@@ -158,8 +155,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    // text-shadow: 0 0 5px #000;
+    color: white; // text-shadow: 0 0 5px #000;
 }
 
 section.parallax h1 {
@@ -184,20 +180,14 @@ section.parallax h1 {
 
 .bg1::after {
     overflow: hidden;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('http://placeimg.com/2048/1536/any');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placeimg.com/2048/1536/any');
     background-repeat: no-repeat;
-
 }
 
 .bg2::after {
     overflow: hidden;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('http://placeimg.com/2048/1535/any');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('http://placeimg.com/2048/1535/any');
     background-repeat: no-repeat;
-
 }
 
 section.static {
@@ -214,7 +204,6 @@ section.static {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 .box .title {
     color: white;
@@ -269,18 +258,15 @@ p {
     display: block;
     text-align: center;
     height: 100vh;
-
+    overflow: hidden;
     >div {
         padding-top: 20em;
     }
-
     h1,
     h2,
     button {
         font-family: Satisfy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
     }
-
     button {
         font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 0.5em 1em;
@@ -289,13 +275,11 @@ p {
         background: transparent;
         border: solid 1px white;
         font-size: 2em;
-
         &:hover {
             background: black;
             border: solid 1px black;
         }
     }
-
     h2 {
         font-size: 2em;
     }

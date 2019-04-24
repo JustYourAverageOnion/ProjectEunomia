@@ -274,6 +274,7 @@ p {
   display: block;
   text-align: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .RSVP > div {
